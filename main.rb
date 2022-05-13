@@ -1,8 +1,8 @@
 class Main 
 
-def intro
-  
-  print "aaaa"
-end
+  def intro
+    
+    print "aaaa"
+  end
    
 end

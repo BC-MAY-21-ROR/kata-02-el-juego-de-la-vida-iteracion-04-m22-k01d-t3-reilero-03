@@ -3,9 +3,9 @@
 require 'rspec'
 require_relative './cells'
 require_relative './board'
+require_relative './full_game'
 
 describe Board do
-  
   describe '.values' do
     before do
       io_obj = ($row,$column)
@@ -19,8 +19,8 @@ describe Board do
       expect(io_obj)
         .to receive(:chomp)
         .and_return(:column)
-      end
     end
+  end
 
     it 'sets @row and @column according to user\'s input' do
       subject.values
@@ -38,7 +38,7 @@ describe Board do
     describe '.cell_matrix' do
       it 'matches our elements, without caring about order' do
         expect([3, 2, 1]).to contain_exactly(1, 2, 3)
-      end
-    end
+        end
+    end 
   end
 end

@@ -1,7 +1,7 @@
 class Main
 
   #Ingersa los valores de alto y ancho
-  def ingreso
+  def values
     print "Elige el ancho del tablero: "
     $width = gets.chomp.to_i
     
@@ -120,7 +120,7 @@ end
 
 #Llamado de los metodos
 juego = Main.new
-juego.ingreso
+juego.values
 juego.get_matriz_base
 juego.check_logic($height,$width)
 juego.get_matriz_final

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require'matrix'
+require_relative './cells'
 class Board
   
   def values
