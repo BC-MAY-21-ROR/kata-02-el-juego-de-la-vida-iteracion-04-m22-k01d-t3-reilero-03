@@ -8,7 +8,7 @@ require_relative './full_game'
 describe Board do
   describe '.values' do
     before do
-      io_obj = ($row,$column)
+      io_obj = $row,$column
       expect(subject)
         .to receive(:gets)
         .and_return(io_obj)
@@ -40,5 +40,4 @@ describe Board do
         expect([3, 2, 1]).to contain_exactly(1, 2, 3)
         end
     end 
-  end
 end

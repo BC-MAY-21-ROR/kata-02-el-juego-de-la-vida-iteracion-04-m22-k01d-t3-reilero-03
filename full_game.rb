@@ -1,6 +1,8 @@
-require_relative './cells'
+require './cells'
 require_relative './board'
+
 class Main
+  
 end
 juego = Main.new
 juego.values

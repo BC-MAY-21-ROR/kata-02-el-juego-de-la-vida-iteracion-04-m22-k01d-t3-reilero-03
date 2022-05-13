@@ -1,6 +1,7 @@
 
-require'cell'
+require'./cells'
 require_relative './board'
+
 class Cells
     def cell_matrix
         @matrix = Array.new(@column){Array.new(@row){[true, false].sample}}
