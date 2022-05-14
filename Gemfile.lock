@@ -103,6 +103,7 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES

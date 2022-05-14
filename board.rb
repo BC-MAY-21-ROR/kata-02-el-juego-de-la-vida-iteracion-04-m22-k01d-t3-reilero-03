@@ -4,7 +4,9 @@ require'matrix'
 require_relative './cells'
 
 class Board
+
   # Ingresar dato por consola
+
   def values
     print "Elige alto del tablero: "
     $row=gets.chomp.to_i
@@ -17,6 +19,8 @@ class Board
   # matriz base
   def create_board
     matriz = Matrix.build($row, $column) { rand(2) }
+    get_matriz_base=matriz
   end
+
 end
 
