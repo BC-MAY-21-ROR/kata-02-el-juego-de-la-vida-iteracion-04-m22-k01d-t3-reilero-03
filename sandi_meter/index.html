@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sandi Chart</title>
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/morris.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/jquery.js"></script>
+  <script src="assets/chart.js"></script>
+  <script src="assets/script.js"></script>
+  <script type="text/javascript">
+    var data = [{"r10":3,"r11":3,"r20":8,"r21":10,"r30":134,"r31":0,"r40":0,"r41":0,"timestamp":1652481683000},{"r10":3,"r11":3,"r20":8,"r21":10,"r30":134,"r31":0,"r40":0,"r41":0,"timestamp":1652481758000},{"r10":6,"r11":4,"r20":8,"r21":14,"r30":204,"r31":0,"r40":0,"r41":0,"timestamp":1652733518000}];
+  </script>
+</head>
+<body>
+  <a href="https://github.com/makaroni4/sandi_meter"><img style="position: absolute; top: 0; left: 0; border: 0;" src="assets/forkme.png" alt="Fork me on GitHub"></a>
+  <div class="container">
+    <header>
+      <h1 class="main-title">Sandi Metz rules</h1>
+      <h2 class="main-description js-report-date"></h2>
+    </header>
+    <section class="pie-charts">
+      <div id="pie1" class="pie-charts-item"></div>
+      <div id="pie2" class="pie-charts-item"></div>
+      <div id="pie3" class="pie-charts-item"></div>
+      <div id="pie4" class="pie-charts-item"></div>
+      <div class="clearfix"></div>
+    </section>
+    <nav class="main-menu">
+      <a href="#" class="main-menu-active js-menu-item" data-rel=".js-charts">Rules</a>
+      <a href="#" class="js-menu-item" data-rel=".js-charts-percentage">Rules %</a>
+      <a href="#" class="js-menu-item" data-rel=".js-progress">Progress %</a>
+      <a href="#" class="js-menu-item" data-rel=".js-details">Details</a>
+    </nav>
+    <section class="plot-charts js-charts js-tab-item">
+      <div class="plot-charts-item">
+        <div class="plot-charts-item-caption">Number of 100 line classes vs time</div>
+        <div class="plot-charts-item-graph plot1"></div>
+      </div>
+      <div class="plot-charts-item">
+        <div class="plot-charts-item-caption">Number of 5 line methods vs time</div>
+        <div class="plot-charts-item-graph plot2"></div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="plot-charts-item">
+        <div class="plot-charts-item-caption">Number of methods calls with 4 params vs time</div>
+        <div class="plot-charts-item-graph plot3"></div>
+      </div>
+      <div class="plot-charts-item">
+        <div class="plot-charts-item-caption">Number of controllers with 1 instance variable vs time</div>
+        <div class="plot-charts-item-graph plot4"></div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+    <section class="details js-details js-tab-item">
+      <h2>Classes with 100+ lines</h2>
+<table class="details-stats">
+  <thead>
+    <tr>
+<th class="" title="">Class name</th>
+<th class="" title="">Size</th>
+<th class="" title="">Path</th>
+</tr>
+
+  </thead>
+  <tbody>
+    <tr>
+<td class="" title="">Game</td>
+<td class="" title="">105</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Main</td>
+<td class="" title="">117</td>
+<td class="" title="">./juegodelavida_1.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented classes">Display</td>
+<td class="warning" title="Misindented classes"></td>
+<td class="warning" title="Misindented classes">./GOL/display.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented classes">Cells</td>
+<td class="warning" title="Misindented classes"></td>
+<td class="warning" title="Misindented classes">./cells.rb</td>
+</tr>
+
+  </tbody>
+</table>
+<div class="hint">NOTE: Red classes are misindented. Start improving your project by fixing them.</div><h2>Methods with 5+ lines</h2>
+<table class="details-stats">
+  <thead>
+    <tr>
+<th class="" title="">Class name</th>
+<th class="" title="">Method name</th>
+<th class="" title="">Size</th>
+<th class="" title="">Path</th>
+</tr>
+
+  </thead>
+  <tbody>
+    <tr>
+<td class="" title="">Game</td>
+<td class="" title="">next_generation</td>
+<td class="" title="">13</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Game</td>
+<td class="" title="">alive_neighbours_count</td>
+<td class="" title="">10</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Game</td>
+<td class="" title="">print_matrix</td>
+<td class="" title="">10</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Game</td>
+<td class="" title="">matrix_snapshot</td>
+<td class="" title="">8</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Game</td>
+<td class="" title="">initial_cells</td>
+<td class="" title="">7</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="" title="">Board</td>
+<td class="" title="">values</td>
+<td class="" title="">6</td>
+<td class="" title="">./board.rb</td>
+</tr>
+<tr>
+<td class="" title="">Game</td>
+<td class="" title="">thrid_rule</td>
+<td class="" title="">6</td>
+<td class="" title="">./game_of_life.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Display</td>
+<td class="warning" title="Misindented methods">display_matrix</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./GOL/display.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Iniciar</td>
+<td class="warning" title="Misindented methods">initialize</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./GOL/inicio.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Neighbours</td>
+<td class="warning" title="Misindented methods">find_neighbour</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./GOL/vecinos.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Cells</td>
+<td class="warning" title="Misindented methods">cell_matrix</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./cells.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Cells</td>
+<td class="warning" title="Misindented methods">initial_cells</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./cells.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Cells</td>
+<td class="warning" title="Misindented methods">next_generation</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./cells.rb</td>
+</tr>
+<tr>
+<td class="warning" title="Misindented methods">Cells</td>
+<td class="warning" title="Misindented methods">print_matrix</td>
+<td class="warning" title="Misindented methods"></td>
+<td class="warning" title="Misindented methods">./cells.rb</td>
+</tr>
+
+  </tbody>
+</table>
+<div class="hint">NOTE: Red methods are misindented. Continue your way to perfect code by fixing them.</div>
+    </section>
+    <section class="charts-percentage js-charts-percentage js-tab-item">
+    </section>
+    <section class="progress js-progress js-tab-item">
+      <div class="plot-charts-item">
+        <div class="plot-charts-item-caption">Overall progress</div>
+        <div class="plot-charts-item-graph plot"></div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      Scanned with love by <a href="https://github.com/makaroni4/sandi_meter">sandi_meter</a> gem.
+      Please, <a href="https://github.com/makaroni4/sandi_meter/issues/new">leave an issue</a> or
+      <a href="mailto:makaroni4@gmail.com">email</a> some feedback!
+    </footer>
+  </div>
+</body>
+</html>
