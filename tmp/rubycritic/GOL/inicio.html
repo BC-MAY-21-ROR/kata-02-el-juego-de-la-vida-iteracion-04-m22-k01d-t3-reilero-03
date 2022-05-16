@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2022-05-16 15:30:55 -0500'>2022-05-16 15:30:55 -0500</time>
+          Updated <time class='js-timeago' datetime='2022-05-16 18:46:29 -0500'>2022-05-16 18:46:29 -0500</time>
         
       </span>
     </div>
@@ -68,15 +68,15 @@
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">32</span><small> lines of codes</small></div>
+              <div><span class="metric">36</span><small> lines of codes</small></div>
               <div><span class="metric">1</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">26.0</span><small> complexity/method</small></div>
-              <div><span class="metric">1</span><small> churn</small></div>
+              <div><span class="metric">36.0</span><small> complexity/method</small></div>
+              <div><span class="metric">2</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">26.04</span><small> complexity</small></div>
+              <div><span class="metric">36.04</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -88,7 +88,7 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                5
+                6
                 smells
               </a>
             </li>
@@ -103,30 +103,34 @@ require_relative &#39;vecinos&#39;
 
 
 class Iniciar<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Irresponsible-Module.md" target="_blank"><b>IrresponsibleModule</b></a>        </span>      </div>      <span>Iniciar has no descriptive comment</span>          </div>  </li></ol>
- def initialize<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="http://docs.seattlerb.org/flog/" target="_blank"><b>HighComplexity</b></a>        </span>      </div>      <span>Iniciar#initialize has a flog score of 26</span>          </div>  </li></ol>
+ def initialize<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="http://docs.seattlerb.org/flog/" target="_blank"><b>HighComplexity</b></a>        </span>      </div>      <span>Iniciar#initialize has a flog score of 36</span>          </div>  </li></ol>
     print &quot;Elige el ancho del tablero: &quot;
-    $width = gets.chomp.to_i<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp.to_i' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  </div>  </li></ol>
+    $width = gets.chomp.to_i<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp.to_i' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li></ol>
     
     print &quot;Elige el alto del tablero: &quot;
-    $height = gets.chomp.to_i<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp.to_i' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  </div>  </li></ol>
+    $height = gets.chomp.to_i<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp.to_i' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li></ol>
 
-    fm=Creator.new.create_first_matrix($height,$width)
-    Display.new.display_matrix(fm)
-
-    nm=Neighbours.new.find_neighbour(fm)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'Neighbours.new.find_neighbour(fm)' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L17" class="js-smell-location">0</a>                  <a href="inicio.html#L23" class="js-smell-location">1</a>                  </div>  </li></ol>
+    print &quot;Ingrese la cantidad de generaciones desada: &quot;
+    $generation = gets.chomp.to_i    <ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'gets.chomp.to_i' 3 times</span>              <span>Locations:</span>                  <a href="inicio.html#L9" class="js-smell-location">0</a>                  <a href="inicio.html#L12" class="js-smell-location">1</a>                  <a href="inicio.html#L15" class="js-smell-location">2</a>                  </div>  </li></ol>
+ 
     #Display.new.display_matrix(nm)
     
-    #ciclo infinito
-    loop do
-       fm=nm
-       nm=Neighbours.new.find_neighbour(fm)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'Neighbours.new.find_neighbour(fm)' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L17" class="js-smell-location">0</a>                  <a href="inicio.html#L23" class="js-smell-location">1</a>                  </div>  </li></ol>
-       Display.new.display_matrix(nm)
-       sleep(1)
-    end
-
-
-
+    puts &quot;Condicion inicial/generacion 0 \n&quot;
+    puts &quot;Alto: #{$height} - Ancho: #{$width} \n&quot;<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'puts "Alto: #{$height} - Ancho: #{$width} \n"' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L20" class="js-smell-location">0</a>                  <a href="inicio.html#L28" class="js-smell-location">1</a>                  </div>  </li></ol>
+    fm=Creator.new.create_first_matrix($height,$width)
+    Display.new.display_matrix(fm)
     
+    nm=Neighbours.new.find_neighbour(fm)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'Neighbours.new.find_neighbour(fm)' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L24" class="js-smell-location">0</a>                  <a href="inicio.html#L30" class="js-smell-location">1</a>                  </div>  </li></ol>
+    
+    for generation_count in 1..$generation do
+      puts &quot;Generacion #{generation_count}: \n&quot;
+      puts &quot;Alto: #{$height} - Ancho: #{$width} \n&quot;<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'puts "Alto: #{$height} - Ancho: #{$width} \n"' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L20" class="js-smell-location">0</a>                  <a href="inicio.html#L28" class="js-smell-location">1</a>                  </div>  </li></ol>
+      fm=nm
+      nm=Neighbours.new.find_neighbour(fm)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Iniciar#initialize calls 'Neighbours.new.find_neighbour(fm)' 2 times</span>              <span>Locations:</span>                  <a href="inicio.html#L24" class="js-smell-location">0</a>                  <a href="inicio.html#L30" class="js-smell-location">1</a>                  </div>  </li></ol>
+      Display.new.display_matrix(nm)
+      sleep(1)
+      generation_count=generation_count+1
+    end
   end
 end
 </code>
